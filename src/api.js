@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8000' });
+const api = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'https://buissness-analytics-ai-backend.onrender.com' });
 
 export const getSampleData = () => api.get('/api/sample-data');
 export const getMetrics = () => api.get('/api/metrics');
